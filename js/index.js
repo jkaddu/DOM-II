@@ -96,9 +96,9 @@ console.log(newNavItem)
 nav.prepend(newNavItem)
 
 // e = event
-// Array.from(document.links).forEach( link => {
-//     link.addEventListener('clcik', (e) => {
-//         console.log('Stopping page from reloading on click')
-//         e.preventDefault();
-//     })
-// })
+Array.from(document.querySelector('.nav-link')).forEach( link => {
+    link.addEventListener('clcik', (e) => {
+        console.log('Stopping page from reloading on click')
+        e.preventDefault();
+    })
+})
